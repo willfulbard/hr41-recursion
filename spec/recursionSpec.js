@@ -20,7 +20,7 @@ describe('Recursion', function(){
     it('Should return factorial of that number.', function(){
         var expected = 720;
         var result = factorial(6);
-        expect(expected).to.equal(result);
+        expect(result).to.equal(expected);
     });
   });
 
@@ -33,7 +33,7 @@ describe('Recursion', function(){
   });
 
   describe('tagCount', function(){
-    
+
     //Yes, we could totally use getElementsByTagName to find this as well.
     // But a demonstration of its usefulness is nice. 
     it('Should match results of getElementsByClassName.length', function(){
@@ -57,13 +57,13 @@ describe('Recursion', function(){
     it('Should return false when not found.', function(){
         var expected = false;
         var result = searchBinary(testlist, 3);
-        expect(expected).to.equal(result);
+        expect(result).to.equal(expected);
     });
 
     it('Should return true when found.', function(){
         var expected = true;
         var result = searchBinary(testlist, 13);
-        expect(expected).to.equal(result);
+        expect(result).to.equal(expected);
     });
   });
 
