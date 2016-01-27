@@ -41,7 +41,7 @@ describe('Recursion', function(){
         var $rootElement = $(htmlString);
         $('body').append($rootElement);
 
-        var result = tagCount(document.body, 'article');
+        var result = tagCount(document.body, 'ARTICLE');
         var expected = document.getElementsByClassName('targetArticle').length;
         expect(result).to.equal(expected);
 
