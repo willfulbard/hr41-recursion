@@ -14,14 +14,34 @@ describe('Recursion', function(){
         expect(result).to.equal(expected);
         expect(classicFibonacci(20)).to.equal(6765);
     });
+
+    it('Should use recursion.', function(){
+      var originalFibonacci = classicFibonacci;
+      classicFibonacci = sinon.spy(classicFibonacci);
+      classicFibonacci(10);
+
+      var fibonacciCallSize = classicFibonacci.callCount >= 2;
+ 
+      expect(fibonacciCallSize).to.equal(true);
+    });
   });
 
   describe('factorial', function(){
-    it('Should return factorial of that number.', function(){
+    it('Should return factorial of input number.', function(){
         var expected = 720;
         var result = factorial(6);
         expect(result).to.equal(expected);
     });
+
+    it('Should use recursion.', function(){
+      var originalFactorial = factorial;
+      factorial = sinon.spy(factorial);
+      factorial(8);
+
+      var factorialCallSize = factorial.callCount >= 2;
+ 
+      expect(factorialCallSize).to.equal( true );
+      });
   });
 
   describe('flatten', function() {
@@ -35,8 +55,8 @@ describe('Recursion', function(){
   describe('tagCount', function(){
 
     //Yes, we could totally use getElementsByTagName to find this as well.
-    // But a demonstration of its usefulness is nice. 
-    it('Should match results of getElementsByClassName.length', function(){
+    // But a demonstration of getElementsByClassName's usefulness is nice. 
+    it('Should count total type of elements within DOM.', function(){
       htmlStrings.forEach(function(htmlString){
         var $rootElement = $(htmlString);
         $('body').append($rootElement);
