@@ -42,4 +42,11 @@ var searchBinary = function(orderedList){
 	//Your code here
 };
 
+// Additional problems for consideration
 
+// Same as factorial, but instead of returning the n!,
+// it returns the array of factorial numbers up to (and including) n! 
+// NOTE: One may remove the result argument, and write in a private closure function instead.
+var factorialArray = function(n, result) {
+	//Your code here
+};
