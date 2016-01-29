@@ -9,8 +9,8 @@ var htmlStrings = [
 describe('Recursion', function(){
   describe('classicFibonacci', function(){
     it('Should match the results of the Fibonacci Sequence.', function(){
-        var expected = 12586269025;
-        var result = classicFibonacci(50);
+        var expected = 2584;
+        var result = classicFibonacci(18);
         expect(result).to.equal(expected);
         expect(classicFibonacci(20)).to.equal(6765);
     });
