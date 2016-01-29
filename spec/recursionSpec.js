@@ -87,5 +87,37 @@ describe('Recursion', function(){
     });
   });
 
+  describe('factorialArray', function() {
+    var factorial = function(n) {
+      if (n < 0) {return;}
+      var array = [1];
+      for (var i = 1; i<=n; i++) {
+        array.push(i * array[i - 1]);
+      }
+      return array;
+    }
+    it('Should not run for invalid inputs.', function() {
+      expect(factorialArray(-1)).to.eql(factorial(-1));
+    });
+    it('Should run for the base case.', function() {
+      expect(factorialArray(0)).to.eql(factorial(0));
+    });
+    it('Should run for random number.', function() {
+      var random = Math.floor(Math.random()*30);
+      expect(factorialArray(random)).to.eql(factorial(random));
+    });       
+    it('Should run for random number.', function() {
+      var random = Math.floor(Math.random()*30);
+      expect(factorialArray(random)).to.eql(factorial(random));
+    });       
+    it('Should run for random number.', function() {
+      var random = Math.floor(Math.random()*30);
+      expect(factorialArray(random)).to.eql(factorial(random));
+    });       
+    it('Should run for random number.', function() {
+      var random = Math.floor(Math.random()*30);
+      expect(factorialArray(random)).to.eql(factorial(random));
+    });       
+  });
 });
 
