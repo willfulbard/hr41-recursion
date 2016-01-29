@@ -2,13 +2,19 @@
 // Assigned by Laura Weaver
 // HR41
 
-// classicFibonacci takes the end number as a parameter. 
+// classicFibonacci takes the end number as a parameter.
+// 
+// NOTE: to pass the "must use recursion" check in the test environment, 
+// you must use recursion on the classicFibonacci function itself. Thus, inner function recursion won't trigger it. 
 var classicFibonacci = function(endNumber) {
 	//Your code here
 };
 
 // Takes a starting number and multiplies it by one less than itself until 0. 
 // Thus, 1×2×3×4 = 24; factorial(4) === 24;
+//
+// NOTE: to pass the "must use recursion" check in the test environment, 
+// you must use recursion on the factorial function itself. Thus, inner function recursion won't trigger it. 
 var factorial = function(num){
 	//Your code here
 };
